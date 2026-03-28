@@ -1,0 +1,43 @@
+body {
+    font-family: Arial;
+    background: #0f172a;
+    color: white;
+    margin: 0;
+}
+
+header {
+    text-align: center;
+    padding: 30px;
+    background: #1e293b;
+}
+
+.collapsible {
+    background: #334155;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+.inner {
+    background: #475569;
+    margin-left: 20px;
+}
+
+.content {
+    display: none;
+    padding: 15px;
+    background: #1e293b;
+}
+
+.inner-content {
+    margin-left: 20px;
+}
+
+a {
+    color: #38bdf8;
+}
