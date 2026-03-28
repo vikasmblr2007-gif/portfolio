@@ -1,18 +1,31 @@
 body {
-    font-family: Arial;
-    background: #0f172a;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    background: linear-gradient(135deg, #1e3a8a, #9333ea, #0ea5e9);
     color: white;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+}
+
+header h1 {
+    font-size: 40px;
     margin: 0;
 }
 
-header {
-    text-align: center;
-    padding: 30px;
-    background: #1e293b;
+header p {
+    font-size: 18px;
+    color: #cbd5f5;
 }
 
+/* BUTTONS (SECTIONS) */
 .collapsible {
-    background: #334155;
+    background: linear-gradient(90deg, #2563eb, #7c3aed);
     color: white;
     cursor: pointer;
     padding: 15px;
@@ -20,24 +33,76 @@ header {
     border: none;
     text-align: left;
     font-size: 18px;
-    margin-top: 5px;
+    margin-top: 10px;
+    border-radius: 10px;
+    transition: 0.3s;
 }
 
+.collapsible:hover {
+    background: linear-gradient(90deg, #7c3aed, #2563eb);
+    transform: scale(1.02);
+}
+
+/* INNER BUTTONS */
 .inner {
-    background: #475569;
+    background: linear-gradient(90deg, #0ea5e9, #22c55e);
     margin-left: 20px;
 }
 
+.inner:hover {
+    background: linear-gradient(90deg, #22c55e, #0ea5e9);
+}
+
+/* CONTENT BOX */
 .content {
     display: none;
-    padding: 15px;
-    background: #1e293b;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    margin: 10px;
+    border-radius: 10px;
+    animation: fadeIn 0.4s ease-in-out;
 }
 
+/* INNER CONTENT */
 .inner-content {
+    margin-left: 30px;
+}
+
+/* TEXT STYLING */
+h2 {
+    color: #facc15;
+}
+
+h3 {
+    color: #38bdf8;
+}
+
+p {
+    line-height: 1.6;
+}
+
+ul {
     margin-left: 20px;
 }
 
+/* LINKS */
 a {
-    color: #38bdf8;
+    color: #22d3ee;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
