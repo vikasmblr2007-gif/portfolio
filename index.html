@@ -30,17 +30,14 @@
 
     <button class="collapsible inner">Credit Card Fraud Detection System</button>
     <div class="content inner-content">
-
         <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d" width="300">
 
         <p><b>Overview:</b> Hybrid ML system combining Random Forest and Behaviour Drift Analysis.</p>
 
-        <p><b>Problem:</b> Increasing online fraud and limitations of rule-based systems.</p>
-
         <p><b>Working:</b></p>
         <ul>
             <li>ML predicts fraud probability</li>
-            <li>Drift detects behavior deviation</li>
+            <li>Drift detects user deviation</li>
             <li>Final score = 70% ML + 30% drift</li>
         </ul>
 
@@ -53,20 +50,14 @@
 
         <p><b>Technologies:</b> Python, Pandas, Scikit-learn</p>
 
-        <p><b>Detailed Explanation:</b> The system preprocesses transaction data, extracts meaningful features, and trains a Random Forest classifier. Behaviour Drift Analysis identifies deviations in user patterns. This hybrid model improves fraud detection reliability.</p>
-
-        <p><b>Outcome:</b> Improved fraud detection accuracy and real-world applicability.</p>
-
+        <p><b>Outcome:</b> Improved fraud detection accuracy.</p>
     </div>
 
     <button class="collapsible inner">Rainfall Prediction System</button>
     <div class="content inner-content">
-
         <img src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29" width="300">
 
         <p><b>Overview:</b> Predicts rainfall using Random Forest Regression.</p>
-
-        <p><b>Problem:</b> Need for accurate weather forecasting.</p>
 
         <p><b>Working:</b></p>
         <ul>
@@ -84,10 +75,7 @@
 
         <p><b>Technologies:</b> Python, Flask, HTML, CSS</p>
 
-        <p><b>Detailed Explanation:</b> The system processes historical rainfall data and applies regression techniques. A Random Forest model is trained to identify patterns and generate predictions. The results are displayed through a web interface.</p>
-
-        <p><b>Outcome:</b> Helps in agriculture planning and environmental analysis.</p>
-
+        <p><b>Outcome:</b> Helps in planning and forecasting.</p>
     </div>
 
 </div>
@@ -96,17 +84,17 @@
 <button class="collapsible">Courses</button>
 <div class="content">
 
-    <p><b>Data Structures and Algorithms:</b> This course enhanced my problem-solving skills by teaching efficient data organization techniques such as arrays, linked lists, stacks, and trees. It helped me write optimized code and understand algorithm complexity deeply.</p>
+    <p><b>Data Structures and Algorithms:</b> This course helped me develop strong problem-solving skills by understanding how data can be efficiently stored and manipulated using structures like arrays, linked lists, stacks, queues, and trees. I learned how to analyze time and space complexity, which improved my ability to write optimized and efficient programs. It also strengthened my logical thinking for solving complex computational problems.</p>
 
-    <p><b>Object Oriented Programming:</b> Learned encapsulation, inheritance, abstraction, and polymorphism. This helped in building modular and scalable applications and improved software design understanding.</p>
+    <p><b>Object Oriented Programming:</b> In this course, I learned the core principles of object-oriented design such as encapsulation, inheritance, abstraction, and polymorphism. These concepts helped me build modular and reusable code, making applications more scalable and easier to maintain. It also improved my understanding of real-world system modeling using programming languages like C++ and Java.</p>
 
-    <p><b>Database Management Systems:</b> Learned SQL, normalization, and database design. This helped me understand how real-world systems store and manage data efficiently.</p>
+    <p><b>Database Management Systems:</b> This course provided a strong foundation in managing and organizing large amounts of data using relational databases. I learned SQL queries, normalization techniques, and transaction management, which are essential for backend development. It also helped me understand how real-world applications handle data storage, retrieval, and security efficiently.</p>
 
-    <p><b>Machine Learning:</b> Studied algorithms like Random Forest and Regression. This course was crucial for building intelligent systems and predictive models.</p>
+    <p><b>Machine Learning:</b> This course introduced me to the concepts of data-driven decision making using algorithms and statistical models. I studied supervised and unsupervised learning, model evaluation techniques, and algorithms such as Random Forest and Linear Regression. It played a crucial role in developing my projects and understanding how intelligent systems are built.</p>
 
-    <p><b>Operating Systems:</b> Learned process scheduling, memory management, and system operations, improving my understanding of how computers work internally.</p>
+    <p><b>Operating Systems:</b> Through this course, I gained knowledge about how operating systems manage hardware and software resources. Topics like process scheduling, memory management, file systems, and concurrency helped me understand how programs run efficiently on a computer. It also improved my understanding of system-level operations and performance optimization.</p>
 
-    <p><b>Probability and Statistics:</b> Built strong mathematical foundation for data analysis and machine learning models.</p>
+    <p><b>Probability and Statistics:</b> This course built my mathematical foundation for analyzing data and making predictions. I learned about probability distributions, hypothesis testing, and statistical inference, which are essential for machine learning and data analysis. It helped me understand how to interpret data and draw meaningful conclusions from it.</p>
 
 </div>
 
@@ -114,16 +102,57 @@
 <button class="collapsible">Writing</button>
 <div class="content">
 
-    <p><b>Credit Card Fraud Detection Report:</b> This project involves preprocessing transaction data, feature engineering, and model training using Random Forest. Behaviour Drift Analysis enhances detection accuracy. The hybrid approach ensures better performance compared to traditional methods.</p>
+    <p><b>Credit Card Fraud Detection System – Technical Report:</b></p>
 
-    <p><b>Rainfall Prediction Report:</b> Uses regression models to predict rainfall based on historical data. Flask interface allows interaction. Demonstrates application of machine learning in environmental analysis.</p>
+    <p>
+    The Credit Card Fraud Detection System is designed to identify fraudulent transactions using a hybrid machine learning approach. 
+    The primary objective of this project is to improve the accuracy of fraud detection while minimizing false positives, which is a major limitation in traditional rule-based systems. 
+    The system utilizes a dataset containing historical transaction records, which undergoes preprocessing steps such as data cleaning, normalization, and feature scaling. 
+    Important features such as transaction amount, time, and frequency are extracted to train the model effectively.
+    </p>
+
+    <p>
+    A Random Forest classifier is employed due to its robustness and ability to handle complex patterns in data. 
+    In addition to machine learning, Behaviour Drift Analysis is incorporated to monitor deviations in user spending patterns. 
+    This allows the system to detect anomalies that may not be captured by the model alone. 
+    The final fraud detection score is calculated by combining the machine learning output with the drift score using a weighted mechanism.
+    </p>
+
+    <p>
+    The results of the system demonstrate improved detection accuracy and reduced false alarms. 
+    This approach provides a scalable and reliable solution for real-time fraud detection in banking and financial systems. 
+    The project highlights the importance of combining statistical models with behavioral insights to build intelligent and adaptive security systems.
+    </p>
+
+    <hr>
+
+    <p><b>Rainfall Prediction System – Technical Report:</b></p>
+
+    <p>
+    The Rainfall Prediction System is developed to forecast future rainfall using historical weather data and machine learning techniques. 
+    The goal of this project is to provide accurate predictions that can assist in agriculture planning, water resource management, and disaster prevention. 
+    The dataset used in this project contains rainfall records for different regions over several years. 
+    Preprocessing steps such as handling missing values, sorting data chronologically, and selecting relevant features are performed to prepare the dataset for model training.
+    </p>
+
+    <p>
+    A Random Forest Regression model is used due to its ability to capture non-linear relationships in data and provide reliable predictions. 
+    The model is trained on a selected number of past years, and it predicts rainfall values for the upcoming year. 
+    The system also calculates seasonal and annual averages to provide a more comprehensive understanding of rainfall patterns. 
+    A Flask-based web application is developed to allow users to interact with the model by selecting regions and viewing predictions in a user-friendly format.
+    </p>
+
+    <p>
+    The system demonstrates good predictive performance and provides meaningful insights into rainfall trends. 
+    This project emphasizes the role of machine learning in solving environmental and agricultural challenges. 
+    It also showcases how predictive models can be integrated with web technologies to create practical and accessible applications for end users.
+    </p>
 
 </div>
 
 <!-- RESUME -->
 <button class="collapsible">Resume</button>
 <div class="content">
-
     <p><b>Name:</b> Vikas</p>
     <p><b>Education:</b> B.Tech Computer Science, VIT (Expected 2027)</p>
 
@@ -134,14 +163,13 @@
         <li>Flask, HTML, CSS</li>
     </ul>
 
-    <p><b>Experience:</b> Built ML projects and deployed web applications using Flask.</p>
+    <p><b>Experience:</b> Developed ML-based applications and deployed web systems using Flask.</p>
 
     <p><b>Contact:</b><br>
         <a href="mailto:vikas.m2025@vitstudent.ac.in">
             vikas.m2025@vitstudent.ac.in
         </a>
     </p>
-
 </div>
 
 <script src="script.js"></script>
