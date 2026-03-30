@@ -36,11 +36,19 @@ header p {
     margin-top: 10px;
     border-radius: 10px;
     transition: 0.3s;
+    background-size: 200% 200%;
 }
 
 .collapsible:hover {
     background: linear-gradient(90deg, #7c3aed, #2563eb);
     transform: scale(1.02);
+    box-shadow: 0 0 15px rgba(124, 58, 237, 0.7),
+                0 0 30px rgba(37, 99, 235, 0.5);
+    animation: gradientMove 2s ease infinite;
+}
+
+.collapsible:active {
+    transform: scale(0.97);
 }
 
 /* INNER BUTTONS */
@@ -61,6 +69,12 @@ header p {
     margin: 10px;
     border-radius: 10px;
     animation: fadeIn 0.4s ease-in-out;
+    transition: 0.3s;
+}
+
+.content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
 }
 
 /* INNER CONTENT */
@@ -79,6 +93,11 @@ h3 {
 
 p {
     line-height: 1.6;
+    transition: 0.3s;
+}
+
+p:hover {
+    color: #e0f2fe;
 }
 
 ul {
@@ -89,10 +108,24 @@ ul {
 a {
     color: #22d3ee;
     text-decoration: none;
+    transition: 0.3s;
 }
 
 a:hover {
     text-decoration: underline;
+    color: #67e8f9;
+    text-shadow: 0 0 8px #22d3ee;
+}
+
+/* IMAGE EFFECTS */
+img {
+    border-radius: 10px;
+    transition: 0.4s;
+}
+
+img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(14,165,233,0.7);
 }
 
 /* ANIMATION */
@@ -105,4 +138,11 @@ a:hover {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+/* GRADIENT ANIMATION */
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
